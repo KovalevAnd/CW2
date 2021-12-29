@@ -39,4 +39,5 @@ def page_tag(tag):
     return render_template('tag.html', tag_posts=tag_posts, tag=tag)
 
 
-app.run()
+if __name__ == '__main__':
+    app.run(debug=True)
